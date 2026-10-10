@@ -1,4 +1,4 @@
-# 🛢️ Sistema de Gestión - LubriCenter
+# 🛢️ Lubricentro DyM | Sistema de Gestión
 
 Sistema integral para la administración de un lubricentro, desarrollado como proyecto académico para la cátedra **Metodología de Sistemas I**.
 
@@ -46,7 +46,7 @@ Permite gestionar productos, controlar el stock disponible y administrar reserva
 El proyecto sigue una arquitectura **Monorepo**, separando claramente el backend y el frontend.
 
 ```text
-LubriCenter/
+Lubricentro-DYM/
 │
 ├── backend/
 │   ├── prisma/
@@ -99,8 +99,8 @@ Antes de comenzar, asegurate de tener instalado:
 ### 1️⃣ Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/lubricenter.git
-cd lubricenter
+git clone https://github.com/Franc-Devel/Lubricentro-DYM.git
+cd Lubricentro-DYM
 ```
 
 ---

@@ -1,5 +1,11 @@
 # 🛢️ Lubricentro DyM | Sistema de Gestión
 
+![Portada conceptual ilustrativa de Lubricentro-DYM; no es una captura real. Cifras, pantallas y módulos ficticios.](assets/covers/cover.png)
+
+> **Ilustración conceptual · No es una captura de una aplicación real.** Las cifras, métricas, pantallas y módulos del mockup son ficticios y no acreditan funcionalidades, resultados ni garantías. Proyecto académico. Productos, marcas, precios, stock, clientes, turnos y porcentajes se utilizan únicamente como elementos ficticios del mockup; no representan operaciones de un taller real.
+>
+> **Concept artwork · Not an actual application screenshot.** Figures, metrics, screens and modules are fictional; they do not substantiate implemented features, measured results or security guarantees. Refer to the documentation below for the project’s actual scope.
+
 Sistema integral para la administración de un lubricentro, desarrollado como proyecto académico para la cátedra **Metodología de Sistemas I**.
 
 Permite gestionar productos, controlar el stock disponible y administrar reservas de turnos mediante una interfaz intuitiva y una API REST escalable.

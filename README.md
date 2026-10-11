@@ -6,9 +6,11 @@
 >
 > **Concept artwork · Not an actual application screenshot.** Figures, metrics, screens and modules are fictional; they do not substantiate implemented features, measured results or security guarantees. Refer to the documentation below for the project’s actual scope.
 
+[Portada para Social Preview · 1280×640](assets/covers/cover-social.jpg) · Ilustración conceptual, no captura real.
+
 Sistema integral para la administración de un lubricentro, desarrollado como proyecto académico para la cátedra **Metodología de Sistemas I**.
 
-Permite gestionar productos, controlar el stock disponible y administrar reservas de turnos mediante una interfaz intuitiva y una API REST escalable.
+Permite gestionar productos, controlar el stock disponible y administrar reservas de turnos mediante una interfaz intuitiva y una API REST con Express y Prisma.
 
 ---
 
@@ -39,7 +41,7 @@ Permite gestionar productos, controlar el stock disponible y administrar reserva
 * Consulta de disponibilidad.
 * Administración de reservas.
 
-### 🔐 Arquitectura Escalable
+### 🧩 Tecnologías del backend
 
 * API REST desarrollada con Express.
 * Persistencia de datos mediante Prisma ORM.
@@ -54,14 +56,14 @@ El proyecto sigue una arquitectura **Monorepo**, separando claramente el backend
 ```text
 Lubricentro-DYM/
 │
-├── backend/
+├── Backend/
 │   ├── prisma/
-│   ├── routes/
-│   ├── controllers/
-│   ├── middleware/
+│   ├── src/routes/
+│   ├── src/controllers/
+│   ├── src/services/
 │   └── index.js
 │
-├── frontend/
+├── Frontend/
 │   ├── css/
 │   ├── js/
 │   ├── assets/
@@ -92,6 +94,8 @@ Tecnologías utilizadas:
 
 ## 🚀 Instalación y Ejecución
 
+**Ramas:** `main` presenta la documentación y la portada; el código está en [developer](https://github.com/Franc-Devel/Lubricentro-DYM/tree/developer). Las instrucciones siguientes corresponden a esa rama. No se afirma disponibilidad en producción ni una auditoría de seguridad.
+
 ### Requisitos Previos
 
 Antes de comenzar, asegurate de tener instalado:
@@ -105,7 +109,7 @@ Antes de comenzar, asegurate de tener instalado:
 ### 1️⃣ Clonar el repositorio
 
 ```bash
-git clone https://github.com/Franc-Devel/Lubricentro-DYM.git
+git clone --branch developer https://github.com/Franc-Devel/Lubricentro-DYM.git
 cd Lubricentro-DYM
 ```
 
@@ -122,8 +126,10 @@ sistema_lubricentro
 Ingresar al directorio backend:
 
 ```bash
-cd backend
+cd Backend
 ```
+
+Configurar `DATABASE_URL` para tu base MySQL local, según [el esquema de Prisma](https://github.com/Franc-Devel/Lubricentro-DYM/blob/developer/Backend/prisma/schema.prisma). Usar credenciales de desarrollo y no publicarlas.
 
 Instalar dependencias:
 
@@ -166,7 +172,7 @@ http://localhost:3000
 Abrir:
 
 ```text
-/frontend/index.html
+/Frontend/index.html
 ```
 
 o ejecutar mediante la extensión **Live Server** de Visual Studio Code.
@@ -181,7 +187,7 @@ Para mantener una correcta organización del proyecto se utilizará una estrateg
 
 | Rama      | Descripción                                   |
 | --------- | --------------------------------------------- |
-| main      | Versión estable del proyecto                  |
+| main      | Documentación y presentación pública          |
 | developer | Rama de integración de nuevas funcionalidades |
 
 ### Ramas de funcionalidad

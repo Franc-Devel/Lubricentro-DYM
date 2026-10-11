@@ -1,0 +1,6 @@
+Abrir terminal!!
+Ejecutar estos dos comandos
+
+cd Backend
+
+node -r dotenv/config index.js

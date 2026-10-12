@@ -236,3 +236,12 @@ Bajo la dirección de **Francisco Delgado (QA Lead)**, el sistema cuenta con una
 
 Desarrollado como **Trabajo Final Integrador de Carrera** para la **Universidad Tecnológica Nacional (UTN)**.
 Año 2026. Todos los derechos reservados.
+
+## Identidad FAUVOR y documentación actual
+
+**FAUVOR Taller** forma parte del catálogo de seis productos FAUVOR. Gestión de taller e inventario.
+
+- [Identidad, ejecución, validación y límites](docs/FAUVOR.md)
+- [FAUVOR Flow: automatizaciones para negocios](https://github.com/Franc-Devel/system-flow)
+
+La portada es conceptual. Las capacidades reales y las diferencias respecto de las demos se detallan en la documentación vinculada.

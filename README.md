@@ -1,4 +1,8 @@
-# 🛢️ Sistema de Gestión y Punto de Venta (POS) — Lubricentro DYM
+# FAUVOR Taller
+
+Producto de FAUVOR. Identidad visual: marfil, bronce y dorado; símbolo e iconos del kit original de la marca. Se conserva la URL histórica del repositorio.
+
+![Portada conceptual de FAUVOR Taller; no es una captura real.](assets/covers/cover.png)
 ### Proyecto Final de Carrera — Universidad Tecnológica Nacional (UTN)
 
 Sistema web integral de alta disponibilidad para la administración comercial, facturación en punto de venta (POS), control de inventario físico, gestión de caja con arqueo y coordinación de turnos de taller mecánico automotriz para **Lubricentro DYM**.

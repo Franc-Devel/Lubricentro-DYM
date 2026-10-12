@@ -577,7 +577,7 @@ export function LoginView() {
                   gap: '8px',
                   padding: '10px 14px',
                   borderRadius: 'var(--radius-md)',
-                  background: 'rgba(16, 185, 129, 0.12)',
+                  background: 'rgba(71,102,79,0.12)',
                   border: '1px solid rgba(169,111,53,0.3)',
                   color: '#6ee7b7',
                   fontSize: '12px',

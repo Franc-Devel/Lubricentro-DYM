@@ -127,9 +127,9 @@ export function CajaView({ cashStatus, refreshCashStatus }) {
         style={{
           padding: '24px',
           background: isBoxOpen
-            ? 'linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, var(--bg-card) 100%)'
+            ? 'linear-gradient(135deg, rgba(71,102,79,0.08) 0%, var(--bg-card) 100%)'
             : 'linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, var(--bg-card) 100%)',
-          border: isBoxOpen ? '1px solid rgba(16, 185, 129, 0.3)' : '1px solid rgba(245, 158, 11, 0.3)',
+          border: isBoxOpen ? '1px solid rgba(71,102,79,0.3)' : '1px solid rgba(245, 158, 11, 0.3)',
         }}
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
@@ -370,7 +370,7 @@ export function CajaView({ cashStatus, refreshCashStatus }) {
                 borderRadius: 'var(--radius-md)',
                 background:
                   differencePreview === 0
-                    ? 'rgba(16, 185, 129, 0.12)'
+                    ? 'rgba(71,102,79,0.12)'
                     : differencePreview > 0
                     ? 'rgba(0, 229, 255, 0.12)'
                     : 'rgba(239, 68, 68, 0.12)',

@@ -10,7 +10,7 @@ export function ToastContainer() {
   const getIcon = (type) => {
     switch (type) {
       case 'success':
-        return <CheckCircle2 size={18} color="#10b981" />;
+        return <CheckCircle2 size={18} color="#47664F" />;
       case 'warning':
         return <AlertTriangle size={18} color="#f59e0b" />;
       case 'error':

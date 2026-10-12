@@ -79,7 +79,7 @@ export function DashboardView() {
         <div
           className="card"
           style={{
-            background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, var(--bg-card) 100%)',
+            background: 'linear-gradient(135deg, rgba(71,102,79,0.12) 0%, var(--bg-card) 100%)',
             border: '1px solid rgba(169,111,53,0.3)',
           }}
         >
@@ -90,7 +90,7 @@ export function DashboardView() {
                 width: '32px',
                 height: '32px',
                 borderRadius: '8px',
-                background: 'rgba(16, 185, 129, 0.15)',
+                background: 'rgba(71,102,79,0.15)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',

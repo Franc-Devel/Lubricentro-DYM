@@ -419,7 +419,7 @@ export function VehiculosGuiaView() {
                 style={{
                   padding: '8px 16px',
                   borderRadius: '12px',
-                  background: 'rgba(16, 185, 129, 0.1)',
+                  background: 'rgba(71,102,79,0.1)',
                   border: '1px solid rgba(169,111,53,0.3)',
                   color: '#6ee7b7',
                   fontSize: '12px',
@@ -455,7 +455,7 @@ export function VehiculosGuiaView() {
                 style={{
                   padding: '20px',
                   borderRadius: '14px',
-                  background: 'rgba(16, 185, 129, 0.08)',
+                  background: 'rgba(71,102,79,0.08)',
                   border: '1px solid rgba(169,111,53,0.3)',
                 }}
               >

@@ -122,7 +122,7 @@ export function ClientesView() {
       {/* Header action bar */}
       <div className="card" style={{ padding: '16px 20px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '14px' }}>
-          
+
           <form onSubmit={handleSearchSubmit} style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', flex: '1 1 320px', maxWidth: '540px' }}>
             <div className="input-with-icon" style={{ flex: '1 1 220px', minWidth: '180px' }}>
               <Search size={16} />
@@ -180,7 +180,7 @@ export function ClientesView() {
                       style={{
                         padding: '3px 8px',
                         borderRadius: '4px',
-                        background: '#041017',
+                        background: '#F7F1E6',
                         border: '1px solid var(--cyan-primary)',
                         color: 'var(--cyan-primary)',
                         fontWeight: 800,
@@ -354,7 +354,7 @@ export function ClientesView() {
                     Terminal: {s.caja_id} | Comprobante N° {s.id.substring(0, 10)}
                   </div>
 
-                  <div style={{ padding: '6px 10px', background: 'rgba(0,0,0,0.2)', borderRadius: '4px' }}>
+                  <div style={{ padding: '6px 10px', background: 'rgba(247,241,230,0.85)', borderRadius: '4px' }}>
                     <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-secondary)', marginBottom: '4px' }}>
                       Ítems instalados / facturados:
                     </div>

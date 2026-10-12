@@ -40,11 +40,9 @@ export function Sidebar({ currentView, setCurrentView }) {
   return (
     <aside className="sidebar">
       <div className="sidebar-header">
-        <div className="brand-badge">
-          <Wrench size={22} />
-        </div>
+        <div className="brand-badge"><img src={`${import.meta.env.BASE_URL}fauvor/symbol.png`} alt="FAUVOR" width="30" height="44" /></div>
         <div className="brand-info">
-          <h2>Lubricentro DYM</h2>
+          <h2>FAUVOR Taller</h2>
           <span>Control Central</span>
         </div>
       </div>

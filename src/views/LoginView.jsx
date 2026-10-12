@@ -11,7 +11,7 @@ export function LoginView() {
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [showManualForm, setShowManualForm] = useState(false);
-  
+
   // Dual login conflict modal state
   const [conflictModalOpen, setConflictModalOpen] = useState(false);
   const [conflictMessage, setConflictMessage] = useState('');
@@ -109,7 +109,7 @@ export function LoginView() {
         width: '100vw',
         minHeight: '100vh',
         padding: '24px 16px',
-        background: 'radial-gradient(ellipse at 50% 30%, #0d1522 0%, #050508 100%)',
+        background: 'radial-gradient(ellipse at 50% 30%, #F7F1E6 0%, #F7F1E6 100%)',
         position: 'relative',
         boxSizing: 'border-box',
       }}
@@ -145,8 +145,8 @@ export function LoginView() {
             gap: '8px',
             padding: '6px 14px',
             borderRadius: '20px',
-            background: 'rgba(0, 229, 255, 0.08)',
-            border: '1px solid rgba(0, 229, 255, 0.25)',
+            background: 'rgba(169,111,53,0.08)',
+            border: '1px solid rgba(169,111,53,0.25)',
             color: 'var(--cyan-primary)',
             fontSize: '12px',
             fontWeight: 600,
@@ -160,8 +160,8 @@ export function LoginView() {
           onClick={handleOpenAdminModal}
           className="btn"
           style={{
-            background: 'rgba(255, 255, 255, 0.05)',
-            border: '1px solid rgba(255, 255, 255, 0.15)',
+            background: 'rgba(169,111,53,0.05)',
+            border: '1px solid rgba(169,111,53,0.18)',
             color: 'var(--text-secondary)',
             fontSize: '12px',
             padding: '6px 12px',
@@ -185,9 +185,9 @@ export function LoginView() {
           width: '100%',
           maxWidth: '560px',
           padding: '32px 28px',
-          background: 'rgba(14, 14, 22, 0.88)',
-          border: '1px solid rgba(0, 229, 255, 0.25)',
-          boxShadow: '0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(0, 229, 255, 0.12)',
+          background: 'rgba(169,111,53,0.88)',
+          border: '1px solid rgba(169,111,53,0.25)',
+          boxShadow: '0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(169,111,53,0.12)',
           zIndex: 10,
           backdropFilter: 'blur(10px)',
         }}
@@ -206,7 +206,7 @@ export function LoginView() {
             <Wrench size={26} />
           </div>
           <h2 style={{ fontSize: '22px', fontWeight: 800, letterSpacing: '0.04em', margin: 0 }}>
-            LUBRICENTRO DYM
+            FAUVOR Taller
           </h2>
           <span
             style={{
@@ -232,7 +232,7 @@ export function LoginView() {
               padding: '12px 14px',
               borderRadius: 'var(--radius-md)',
               background: 'rgba(239, 68, 68, 0.12)',
-              border: '1px solid rgba(239, 68, 68, 0.3)',
+              border: '1px solid rgba(169,111,53,0.3)',
               color: '#fca5a5',
               fontSize: '12px',
               marginBottom: '18px',
@@ -246,8 +246,8 @@ export function LoginView() {
         {/* Demo Mode / Quick Role Selector Card */}
         <div
           style={{
-            background: 'rgba(0, 229, 255, 0.04)',
-            border: '1px solid rgba(0, 229, 255, 0.22)',
+            background: 'rgba(169,111,53,0.04)',
+            border: '1px solid rgba(169,111,53,0.22)',
             borderRadius: '12px',
             padding: '16px',
             marginBottom: '18px',
@@ -282,7 +282,7 @@ export function LoginView() {
             <div
               style={{
                 background: 'rgba(245, 158, 11, 0.08)',
-                border: '1px solid rgba(245, 158, 11, 0.35)',
+                border: '1px solid rgba(169,111,53,0.35)',
                 borderRadius: '10px',
                 padding: '14px',
                 display: 'flex',
@@ -297,7 +297,7 @@ export function LoginView() {
                     <ShieldCheck size={16} />
                     <span>Administrador</span>
                   </div>
-                  <span style={{ fontSize: '10px', padding: '2px 6px', background: 'rgba(245, 158, 11, 0.2)', color: '#fef3c7', borderRadius: '8px', fontWeight: 600 }}>
+                  <span style={{ fontSize: '10px', padding: '2px 6px', background: 'rgba(245, 158, 11, 0.2)', color: '#2B211A', borderRadius: '8px', fontWeight: 600 }}>
                     Total
                   </span>
                 </div>
@@ -331,8 +331,8 @@ export function LoginView() {
             {/* Normal User / Cajero Card */}
             <div
               style={{
-                background: 'rgba(0, 229, 255, 0.08)',
-                border: '1px solid rgba(0, 229, 255, 0.35)',
+                background: 'rgba(169,111,53,0.08)',
+                border: '1px solid rgba(169,111,53,0.35)',
                 borderRadius: '10px',
                 padding: '14px',
                 display: 'flex',
@@ -347,7 +347,7 @@ export function LoginView() {
                     <User size={16} />
                     <span>Usuario Normal</span>
                   </div>
-                  <span style={{ fontSize: '10px', padding: '2px 6px', background: 'rgba(0, 229, 255, 0.2)', color: '#e0f2fe', borderRadius: '8px', fontWeight: 600 }}>
+                  <span style={{ fontSize: '10px', padding: '2px 6px', background: 'rgba(169,111,53,0.2)', color: '#2B211A', borderRadius: '8px', fontWeight: 600 }}>
                     Cajero
                   </span>
                 </div>
@@ -364,7 +364,7 @@ export function LoginView() {
                 className="btn"
                 style={{
                   width: '100%',
-                  background: 'linear-gradient(135deg, #00e5ff, #0099ff)',
+                  background: 'linear-gradient(135deg, #FFFAF2, #FFFAF2)',
                   color: '#000',
                   fontWeight: 700,
                   fontSize: '12px',
@@ -487,7 +487,7 @@ export function LoginView() {
               padding: '12px',
               borderRadius: 'var(--radius-md)',
               background: 'rgba(245, 158, 11, 0.1)',
-              border: '1px solid rgba(245, 158, 11, 0.3)',
+              border: '1px solid rgba(169,111,53,0.3)',
               fontSize: '12px',
               color: '#fbbf24',
             }}
@@ -531,7 +531,7 @@ export function LoginView() {
                     padding: '10px 12px',
                     borderRadius: 'var(--radius-md)',
                     background: 'rgba(239, 68, 68, 0.15)',
-                    border: '1px solid rgba(239, 68, 68, 0.3)',
+                    border: '1px solid rgba(169,111,53,0.3)',
                     color: '#fca5a5',
                     fontSize: '12px',
                   }}
@@ -578,7 +578,7 @@ export function LoginView() {
                   padding: '10px 14px',
                   borderRadius: 'var(--radius-md)',
                   background: 'rgba(16, 185, 129, 0.12)',
-                  border: '1px solid rgba(16, 185, 129, 0.3)',
+                  border: '1px solid rgba(169,111,53,0.3)',
                   color: '#6ee7b7',
                   fontSize: '12px',
                 }}

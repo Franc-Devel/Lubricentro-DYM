@@ -16,7 +16,7 @@ export function ToastContainer() {
       case 'error':
         return <AlertCircle size={18} color="#ef4444" />;
       default:
-        return <Info size={18} color="#00e5ff" />;
+        return <Info size={18} color="#895522" />;
     }
   };
 

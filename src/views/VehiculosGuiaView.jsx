@@ -172,7 +172,7 @@ export function VehiculosGuiaView() {
 
   return (
     <div className="page-view-container" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-      
+
       {/* 1. TOP HEADER BAR */}
       <div className="card" style={{ padding: '16px 24px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
@@ -187,7 +187,7 @@ export function VehiculosGuiaView() {
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
-            <div style={{ display: 'flex', background: 'rgba(0,0,0,0.4)', padding: '4px', borderRadius: '10px', border: '1px solid var(--border-subtle)' }}>
+            <div style={{ display: 'flex', background: 'rgba(247,241,230,0.85)', padding: '4px', borderRadius: '10px', border: '1px solid var(--border-subtle)' }}>
               <button
                 onClick={() => setSelectedType('Autos y Camionetas')}
                 className={`btn ${selectedType === 'Autos y Camionetas' ? 'btn-primary' : 'btn-secondary'}`}
@@ -216,13 +216,13 @@ export function VehiculosGuiaView() {
         className="card"
         style={{
           padding: '24px',
-          background: 'radial-gradient(ellipse at 50% 0%, rgba(13, 27, 46, 0.9) 0%, rgba(8, 12, 20, 0.95) 100%)',
-          border: '1px solid rgba(0, 229, 255, 0.35)',
+          background: 'radial-gradient(ellipse at 50% 0%, rgba(169,111,53,0.9) 0%, rgba(169,111,53,0.95) 100%)',
+          border: '1px solid rgba(169,111,53,0.35)',
           boxShadow: '0 12px 36px rgba(0,0,0,0.6)',
         }}
       >
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', position: 'relative' }}>
-          
+
           {/* Main Search Input Box */}
           <div style={{ position: 'relative', width: '100%' }}>
             <label style={{ fontSize: '12px', fontWeight: 700, color: 'var(--cyan-primary)', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: '8px', display: 'block' }}>
@@ -249,10 +249,10 @@ export function VehiculosGuiaView() {
                   paddingLeft: '50px',
                   paddingRight: searchTerm ? '50px' : '16px',
                   borderRadius: '12px',
-                  background: 'rgba(5, 7, 12, 0.95)',
+                  background: 'rgba(169,111,53,0.95)',
                   border: '1.5px solid var(--cyan-primary)',
-                  boxShadow: '0 0 20px rgba(0, 229, 255, 0.15)',
-                  color: '#ffffff',
+                  boxShadow: '0 0 20px rgba(169,111,53,0.15)',
+                  color: '#2B211A',
                 }}
                 placeholder="Escriba el vehículo que busca... (Ej: Trend, Hilux, Cronos, 208, Amarok, Corsa, Titan)"
                 value={searchTerm}
@@ -294,7 +294,7 @@ export function VehiculosGuiaView() {
                   left: 0,
                   right: 0,
                   marginTop: '8px',
-                  background: '#0a101d',
+                  background: '#F7F1E6',
                   border: '1.5px solid var(--cyan-primary)',
                   borderRadius: '12px',
                   boxShadow: '0 16px 40px rgba(0,0,0,0.9)',
@@ -306,7 +306,7 @@ export function VehiculosGuiaView() {
                 <div
                   style={{
                     padding: '10px 16px',
-                    background: 'rgba(0, 229, 255, 0.12)',
+                    background: 'rgba(169,111,53,0.12)',
                     borderBottom: '1px solid var(--border-subtle)',
                     fontSize: '11px',
                     fontWeight: 800,
@@ -335,7 +335,7 @@ export function VehiculosGuiaView() {
                     onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}
                   >
                     <div>
-                      <div style={{ fontWeight: 800, fontSize: '15px', color: '#ffffff' }}>
+                      <div style={{ fontWeight: 800, fontSize: '15px', color: '#2B211A' }}>
                         {item.marca} - {item.modelo}
                       </div>
                       <div style={{ fontSize: '12px', color: 'var(--cyan-primary)', marginTop: '3px' }}>
@@ -394,7 +394,7 @@ export function VehiculosGuiaView() {
       </div>
 
       {/* 3. HERO FICHA TÉCNICA CARD */}
-      <div className="card" style={{ padding: '28px', background: 'rgba(14, 14, 22, 0.9)' }}>
+      <div className="card" style={{ padding: '28px', background: 'rgba(169,111,53,0.9)' }}>
         {!spec ? (
           <div style={{ textAlign: 'center', padding: '40px', color: 'var(--text-muted)' }}>
             <Car size={48} style={{ margin: '0 auto 14px auto', opacity: 0.5 }} />
@@ -408,7 +408,7 @@ export function VehiculosGuiaView() {
                 <span className="badge badge-cyan" style={{ marginBottom: '8px', fontSize: '11px' }}>
                   {spec.tipo}
                 </span>
-                <h2 style={{ fontSize: '26px', fontWeight: 900, color: '#ffffff', letterSpacing: '0.02em', margin: 0 }}>
+                <h2 style={{ fontSize: '26px', fontWeight: 900, color: '#2B211A', letterSpacing: '0.02em', margin: 0 }}>
                   {spec.marca} - {spec.modelo}
                 </h2>
               </div>
@@ -417,7 +417,7 @@ export function VehiculosGuiaView() {
                   padding: '8px 16px',
                   borderRadius: '12px',
                   background: 'rgba(16, 185, 129, 0.1)',
-                  border: '1px solid rgba(16, 185, 129, 0.3)',
+                  border: '1px solid rgba(169,111,53,0.3)',
                   color: '#6ee7b7',
                   fontSize: '12px',
                   fontWeight: 700,
@@ -429,22 +429,22 @@ export function VehiculosGuiaView() {
 
             {/* Spec Cards Grid */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px' }}>
-              
+
               {/* Aceite */}
               <div
                 style={{
                   padding: '20px',
                   borderRadius: '14px',
-                  background: 'rgba(0, 229, 255, 0.08)',
-                  border: '1px solid rgba(0, 229, 255, 0.3)',
-                  boxShadow: '0 4px 15px rgba(0, 229, 255, 0.05)',
+                  background: 'rgba(169,111,53,0.08)',
+                  border: '1px solid rgba(169,111,53,0.3)',
+                  boxShadow: '0 4px 15px rgba(169,111,53,0.05)',
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--cyan-primary)', marginBottom: '10px' }}>
                   <Droplet size={20} />
                   <span style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Aceite de Motor</span>
                 </div>
-                <div style={{ fontSize: '16px', fontWeight: 800, color: '#ffffff' }}>{spec.aceite || 'No especificado'}</div>
+                <div style={{ fontSize: '16px', fontWeight: 800, color: '#2B211A' }}>{spec.aceite || 'No especificado'}</div>
               </div>
 
               {/* Filtro Aceite */}
@@ -453,14 +453,14 @@ export function VehiculosGuiaView() {
                   padding: '20px',
                   borderRadius: '14px',
                   background: 'rgba(16, 185, 129, 0.08)',
-                  border: '1px solid rgba(16, 185, 129, 0.3)',
+                  border: '1px solid rgba(169,111,53,0.3)',
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--emerald-primary)', marginBottom: '10px' }}>
                   <ShieldCheck size={20} />
                   <span style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Filtro de Aceite</span>
                 </div>
-                <div style={{ fontSize: '16px', fontWeight: 800, color: '#ffffff' }}>{spec.filtro_aceite || 'N/A'}</div>
+                <div style={{ fontSize: '16px', fontWeight: 800, color: '#2B211A' }}>{spec.filtro_aceite || 'N/A'}</div>
               </div>
 
               {/* Filtro Aire */}
@@ -469,14 +469,14 @@ export function VehiculosGuiaView() {
                   padding: '20px',
                   borderRadius: '14px',
                   background: 'rgba(245, 158, 11, 0.08)',
-                  border: '1px solid rgba(245, 158, 11, 0.3)',
+                  border: '1px solid rgba(169,111,53,0.3)',
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--amber-primary)', marginBottom: '10px' }}>
                   <Wind size={20} />
                   <span style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Filtro de Aire</span>
                 </div>
-                <div style={{ fontSize: '16px', fontWeight: 800, color: '#ffffff' }}>{spec.filtro_aire || 'N/A'}</div>
+                <div style={{ fontSize: '16px', fontWeight: 800, color: '#2B211A' }}>{spec.filtro_aire || 'N/A'}</div>
               </div>
 
               {/* Filtro Combustible */}
@@ -485,14 +485,14 @@ export function VehiculosGuiaView() {
                   padding: '20px',
                   borderRadius: '14px',
                   background: 'rgba(239, 68, 68, 0.08)',
-                  border: '1px solid rgba(239, 68, 68, 0.3)',
+                  border: '1px solid rgba(169,111,53,0.3)',
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#fca5a5', marginBottom: '10px' }}>
                   <Fuel size={20} />
                   <span style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Filtro de Combustible</span>
                 </div>
-                <div style={{ fontSize: '16px', fontWeight: 800, color: '#ffffff' }}>{spec.filtro_combustible || 'N/A'}</div>
+                <div style={{ fontSize: '16px', fontWeight: 800, color: '#2B211A' }}>{spec.filtro_combustible || 'N/A'}</div>
               </div>
 
               {/* Filtro Habitáculo */}
@@ -500,15 +500,15 @@ export function VehiculosGuiaView() {
                 style={{
                   padding: '20px',
                   borderRadius: '14px',
-                  background: 'rgba(168, 85, 247, 0.08)',
-                  border: '1px solid rgba(168, 85, 247, 0.3)',
+                  background: 'rgba(169,111,53,0.08)',
+                  border: '1px solid rgba(169,111,53,0.3)',
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--purple-primary)', marginBottom: '10px' }}>
                   <Sparkles size={20} />
                   <span style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Filtro Habitáculo</span>
                 </div>
-                <div style={{ fontSize: '16px', fontWeight: 800, color: '#ffffff' }}>{spec.filtro_habitaculo || 'N/A'}</div>
+                <div style={{ fontSize: '16px', fontWeight: 800, color: '#2B211A' }}>{spec.filtro_habitaculo || 'N/A'}</div>
               </div>
 
             </div>
@@ -563,7 +563,7 @@ export function VehiculosGuiaView() {
                     </span>
                   </td>
                   <td style={{ fontWeight: 600 }}>{s.marca}</td>
-                  <td style={{ fontWeight: 700, color: '#ffffff' }}>{s.modelo}</td>
+                  <td style={{ fontWeight: 700, color: '#2B211A' }}>{s.modelo}</td>
                   <td style={{ color: 'var(--cyan-primary)', fontWeight: 600 }}>{s.aceite}</td>
                   <td>{s.filtro_aceite}</td>
                   <td>{s.filtro_aire}</td>

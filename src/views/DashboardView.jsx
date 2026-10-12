@@ -41,13 +41,13 @@ export function DashboardView() {
     <div className="page-view-container">
       {/* KPI Cards Row */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px' }}>
-        
+
         {/* Card 1: Facturación Hoy */}
         <div
           className="card"
           style={{
-            background: 'linear-gradient(135deg, rgba(0, 229, 255, 0.12) 0%, var(--bg-card) 100%)',
-            border: '1px solid rgba(0, 229, 255, 0.3)',
+            background: 'linear-gradient(135deg, rgba(169,111,53,0.12) 0%, var(--bg-card) 100%)',
+            border: '1px solid rgba(169,111,53,0.3)',
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
@@ -57,7 +57,7 @@ export function DashboardView() {
                 width: '32px',
                 height: '32px',
                 borderRadius: '8px',
-                background: 'rgba(0, 229, 255, 0.15)',
+                background: 'rgba(169,111,53,0.15)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -80,7 +80,7 @@ export function DashboardView() {
           className="card"
           style={{
             background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, var(--bg-card) 100%)',
-            border: '1px solid rgba(16, 185, 129, 0.3)',
+            border: '1px solid rgba(169,111,53,0.3)',
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
@@ -113,7 +113,7 @@ export function DashboardView() {
           className="card"
           style={{
             background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, var(--bg-card) 100%)',
-            border: '1px solid rgba(245, 158, 11, 0.3)',
+            border: '1px solid rgba(169,111,53,0.3)',
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
@@ -145,8 +145,8 @@ export function DashboardView() {
         <div
           className="card"
           style={{
-            background: 'linear-gradient(135deg, rgba(168, 85, 247, 0.12) 0%, var(--bg-card) 100%)',
-            border: '1px solid rgba(168, 85, 247, 0.3)',
+            background: 'linear-gradient(135deg, rgba(169,111,53,0.12) 0%, var(--bg-card) 100%)',
+            border: '1px solid rgba(169,111,53,0.3)',
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
@@ -156,7 +156,7 @@ export function DashboardView() {
                 width: '32px',
                 height: '32px',
                 borderRadius: '8px',
-                background: 'rgba(168, 85, 247, 0.15)',
+                background: 'rgba(169,111,53,0.15)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -177,7 +177,7 @@ export function DashboardView() {
 
       {/* Chart and Top Products Grid */}
       <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '18px' }}>
-        
+
         {/* Weekly Revenue Bar Chart */}
         <div className="card" style={{ padding: '24px', display: 'flex', flexDirection: 'column' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>

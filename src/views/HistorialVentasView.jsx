@@ -118,7 +118,7 @@ export function HistorialVentasView() {
       {/* Filters Card */}
       <div className="card" style={{ padding: '16px 20px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '14px' }}>
-          
+
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               <Calendar size={15} color="var(--cyan-primary)" />
@@ -336,7 +336,7 @@ export function HistorialVentasView() {
                 padding: '12px',
                 borderRadius: 'var(--radius-md)',
                 background: 'rgba(239, 68, 68, 0.1)',
-                border: '1px solid rgba(239, 68, 68, 0.3)',
+                border: '1px solid rgba(169,111,53,0.3)',
                 fontSize: '12px',
                 color: '#fca5a5',
               }}

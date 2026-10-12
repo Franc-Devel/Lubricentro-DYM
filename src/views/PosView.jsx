@@ -239,10 +239,10 @@ export function PosView() {
   return (
     <div className="page-view-container" style={{ padding: '16px 20px', height: '100%', overflow: 'hidden' }}>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 380px', gap: '18px', height: 'calc(100vh - 100px)' }}>
-        
+
         {/* LEFT COLUMN: Search & Shopping Cart Table */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', height: '100%', minWidth: 0 }}>
-          
+
           {/* Search Bar & Auto-Complete */}
           <div className="card" style={{ padding: '14px 18px', position: 'relative' }}>
             <div className="input-with-icon" style={{ width: '100%' }}>
@@ -437,7 +437,7 @@ export function PosView() {
 
         {/* RIGHT COLUMN: Customer, Seller, Discount & Checkout Panel */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', height: '100%' }}>
-          
+
           {/* Metadata Card: Plate & Seller */}
           <div className="card" style={{ padding: '16px' }}>
             <h4 className="card-title" style={{ fontSize: '13px', marginBottom: '12px' }}>
@@ -493,8 +493,8 @@ export function PosView() {
               flexDirection: 'column',
               justifyContent: 'space-between',
               padding: '20px',
-              background: 'linear-gradient(180deg, var(--bg-card) 0%, rgba(0, 229, 255, 0.04) 100%)',
-              border: '1px solid rgba(0, 229, 255, 0.2)',
+              background: 'linear-gradient(180deg, var(--bg-card) 0%, rgba(169,111,53,0.04) 100%)',
+              border: '1px solid rgba(169,111,53,0.2)',
             }}
           >
             <div>
@@ -579,8 +579,8 @@ export function PosView() {
             style={{
               padding: '16px',
               borderRadius: 'var(--radius-md)',
-              background: 'rgba(0, 229, 255, 0.08)',
-              border: '1px solid rgba(0, 229, 255, 0.25)',
+              background: 'rgba(169,111,53,0.08)',
+              border: '1px solid rgba(169,111,53,0.25)',
               textAlign: 'center',
             }}
           >
@@ -671,7 +671,7 @@ export function PosView() {
             <div
               id="printable-ticket"
               style={{
-                background: '#fff',
+                background: '#FFFAF2',
                 color: '#000',
                 padding: '24px',
                 borderRadius: '8px',
@@ -682,7 +682,7 @@ export function PosView() {
               }}
             >
               <div style={{ textAlign: 'center', borderBottom: '1px dashed #000', paddingBottom: '10px' }}>
-                <h3 style={{ margin: 0, fontSize: '16px', fontWeight: 'bold' }}>LUBRICENTRO DYM</h3>
+                <h3 style={{ margin: 0, fontSize: '16px', fontWeight: 'bold' }}>FAUVOR Taller</h3>
                 <p style={{ margin: '2px 0' }}>Av. Principal 1234 - Tel: (381) 456-7890</p>
                 <p style={{ margin: '2px 0' }}>TICKET DE VENTA OFICIAL</p>
               </div>

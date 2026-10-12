@@ -32,7 +32,7 @@ export function Navbar({ currentView, cashStatus }) {
       case 'admin':
         return 'Panel Administrativo & Contable';
       default:
-        return 'Lubricentro DYM';
+        return 'FAUVOR Taller';
     }
   };
 
@@ -50,8 +50,8 @@ export function Navbar({ currentView, cashStatus }) {
           style={{
             display: 'flex',
             alignItems: 'center',
-            background: 'rgba(255, 255, 255, 0.04)',
-            border: '1px solid rgba(0, 229, 255, 0.25)',
+            background: 'rgba(169,111,53,0.04)',
+            border: '1px solid rgba(169,111,53,0.25)',
             borderRadius: '20px',
             padding: '2px 4px',
             gap: '4px',
@@ -88,7 +88,7 @@ export function Navbar({ currentView, cashStatus }) {
               fontWeight: 700,
               border: 'none',
               cursor: 'pointer',
-              background: !isAdmin ? 'linear-gradient(135deg, #00e5ff, #0099ff)' : 'transparent',
+              background: !isAdmin ? 'linear-gradient(135deg, #895522, #0099ff)' : 'transparent',
               color: !isAdmin ? '#000' : 'var(--text-secondary)',
               transition: 'all 0.2s',
             }}

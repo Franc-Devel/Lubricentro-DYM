@@ -184,7 +184,7 @@ export function CajaView({ cashStatus, refreshCashStatus }) {
               <button
                 onClick={() => setCloseModalVisible(true)}
                 className="btn btn-primary btn-lg"
-                style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)', border: 'none', color: '#fff' }}
+                style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)', border: 'none', color: '#2B211A' }}
               >
                 <Lock size={18} /> Realizar Arqueo & Cerrar Caja
               </button>
@@ -330,8 +330,8 @@ export function CajaView({ cashStatus, refreshCashStatus }) {
             style={{
               padding: '16px',
               borderRadius: 'var(--radius-md)',
-              background: 'rgba(0, 229, 255, 0.08)',
-              border: '1px solid rgba(0, 229, 255, 0.25)',
+              background: 'rgba(169,111,53,0.08)',
+              border: '1px solid rgba(169,111,53,0.25)',
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',

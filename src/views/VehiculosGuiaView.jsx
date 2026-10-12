@@ -42,6 +42,7 @@ export function VehiculosGuiaView() {
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
+          data = data.filter(value => value && typeof value === "object" && typeof value.marca === "string" && typeof value.modelo === "string");
           setAllSpecs(data);
           if (data.length > 0 && !spec) {
             setSpec(data[0]);
@@ -81,6 +82,7 @@ export function VehiculosGuiaView() {
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
+          data = data.filter(value => typeof value === "string");
           setBrands(data);
           if (data.length > 0) {
             setSelectedBrand(data[0]);
@@ -100,6 +102,7 @@ export function VehiculosGuiaView() {
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
+          data = data.filter(value => typeof value === "string");
           setModels(data);
           if (data.length > 0) {
             setSelectedModel(data[0]);
@@ -121,7 +124,7 @@ export function VehiculosGuiaView() {
     )
       .then((res) => res.json())
       .then((data) => {
-        if (data) setSpec(data);
+        if (data && !Array.isArray(data) && typeof data === "object" && typeof data.modelo === "string") setSpec(data);
       })
       .catch(() => {})
       .finally(() => setLoading(false));
